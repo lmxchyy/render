@@ -5,4 +5,4 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN echo 'root:frepai' | chpasswd
 EXPOSE 22
-CMD ["/usr/bin/shellinaboxd","-t","-s","/:LOGIN"]
+CMD ["/usr/bin/shellinabox","-t","-s","/:LOGIN"]
